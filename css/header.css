@@ -1,0 +1,79 @@
+header.flex{
+    /* بيخلي اول عنصر علي الشمال والباقي علي اليمين */
+    justify-content: space-between;
+  padding-inline: 6rem; 
+  padding-top: 1.2rem;
+&.links .fa-solid{
+    margin-right :0.3rem; ;
+}
+ & .sign-in{
+    margin-inline: 1rem;
+}
+& .sign-in,
+& .register{
+   border: 1px solid var(--bodyfont);
+   padding:.44rem  1rem;
+   border-radius: 55px;
+   font-size: .8rem;
+   font-weight: 500;
+}
+& .sign-in:hover,
+& .register:hover,
+& .sign-in:hover .fa-solid,
+& .register:hover.fa-solid{
+background-color: var(--bodyfont);
+color: rgb(215, 249, 250);
+
+}
+& .cart{
+    background-color:var(--bodyfont);
+    font-size: .9rem;
+    padding: .44rem 1.1rem .44rem .6rem;
+    border-radius:55px ;
+}
+&.cart.fa-solid{
+    color: var(--blue);
+}
+& .product-number{
+    position:absolute;
+    right: 0;
+    top: -6px;
+    font-size: .7rem;
+    font-weight: bold;
+
+    background-color: brown;
+    height: 55px;
+    width: 55px;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+/* logo css */
+&.fa-bag-shopping{
+font-size: 2rem;
+}
+  
+}
+@media (width<1600px) {
+    & header.flex{
+        justify-content: center;
+        padding-inline: 0;
+
+}
+header.flex{
+    justify-content: center;
+    padding-inline: 0;
+    .links{
+       display: flex;
+       flex-wrap:wrap;
+       justify-content: center;
+       gap: 1rem;
+    }
+    .logo{
+        display: none;
+    }
+}
+
+}

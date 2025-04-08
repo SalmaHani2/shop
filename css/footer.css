@@ -1,0 +1,15 @@
+footer{
+    text-align: center;
+    background-color: rgb(12, 27, 55);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    padding-block: 1rem;
+    margin-top: 3rem;
+    color: aliceblue;
+    font-size: 17px;
+}
+
+.sal{
+    font-size: 23px;
+    color: rgb(116 170 221);
+}
